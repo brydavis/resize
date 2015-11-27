@@ -8,12 +8,13 @@ package main
 import (
 	"fmt"
 	"os"
+	rs "github.com/brydavis/resize"
 )
 
 func main() {
 	file, _ := os.Open("example.jpg")
-	img, _ := ResizePixels(file, 2000, 2000)
-	err := WriteToFile("new_example.jpg", img)
+	img, _ := rs.ResizePixels(file, 2000, 2000)
+	err := rs.WriteToFile("new_example.jpg", img)
 	if err != nil {
 		fmt.Println(err)
 	}
