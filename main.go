@@ -1,9 +1,17 @@
 package main
 
-func main() {
-	// file, _ := os.Open("gophermega.jpg")
-	// img, _ := ResizePixels(file, 2000, 2000)
-	// WriteToFile("mega.jpg", img)
+// import (
+// 	"fmt"
+// 	"os"
+// )
 
-	ResizeFolderPixels(".", 100, 200, "sm")
-}
+// func main() {
+// 	file, _ := os.Open("example.jpg")
+// 	img, _ := ResizePixels(file, 2000, 2000)
+// 	err := WriteToFile("new_example.jpg", img)
+// 	if err != nil {
+// 		fmt.Println(err)
+// 	}
+
+// 	// ResizeFolderPixels(".", 100, 200, "sm")
+// }
