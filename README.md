@@ -19,3 +19,11 @@ func main() {
 	}
 }
 ```
+
+<br>
+<br>
+
+<hr>
+<small>
+<strong>MIT License &copy; 2015</strong>
+</small>
