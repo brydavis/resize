@@ -38,6 +38,8 @@ func ResizeFolderPercent(dir string, percent float64, prefix string) {
 	for _, item := range d {
 		filename := item.Name()
 		file, _ := os.Open(filename)
+		defer file.Close()
+
 		ext := path.Ext(filename)
 
 		if ext != ".jpg" && ext != ".jpeg" && ext != ".png" {
@@ -61,6 +63,8 @@ func ResizeFolderPixels(dir string, width, height int, prefix string) {
 	for _, item := range d {
 		filename := item.Name()
 		file, _ := os.Open(filename)
+		defer file.Close()
+
 		ext := path.Ext(filename)
 
 		if ext != ".jpg" && ext != ".jpeg" && ext != ".png" {
